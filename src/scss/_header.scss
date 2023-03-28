@@ -11,6 +11,7 @@
   &__top {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     min-height: 60px;
   }
 
@@ -147,6 +148,7 @@
   display: flex;
   align-items: center;
   min-height: 40px;
+  flex-wrap: wrap;
 
   // .menu-bottom__item
 

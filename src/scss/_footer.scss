@@ -1,3 +1,251 @@
 .footer {
-  flex: 0 0 auto;
+  background-color: $blue;
+  padding: 48px 0px;
+
+  @media screen and (max-width: 450px) {
+    padding: 30px 0px;
+  }
+
+  // .footer__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .footer__top
+
+  &__top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 38px;
+    border-bottom: 1px solid rgba($color: $white, $alpha: .3);
+
+    @media screen and (max-width: 450px) {
+      flex-direction: column;
+      align-items: strech;
+      border-bottom: none;
+      padding-bottom: 0px;
+      order: 0;
+    }
+  }
+
+  // .footer__middle
+
+  &__middle {
+    display: grid;
+    gap: 20px;
+    padding: 27px 0px 86px;
+    border-bottom: 1px solid rgba($color: $white, $alpha: .3);
+    grid-template-columns: 1fr;
+
+    @media screen and (min-width: 920px) {
+      grid-template-columns: 25% 1fr 25%;
+      gap: 104px;
+      grid-auto-flow: dense;
+    }
+
+    @media screen and (max-width: 450px) {
+      order: 2;
+      padding: 30px 0px 20px;
+    }
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 32px 0px 0px;
+
+    @media screen and (max-width: 450px) {
+      order: 1;
+      justify-content: space-between;
+    }
+
+  }
+}
+
+.top-footer {
+
+  // .top-footer__title
+
+  &__title {
+    flex: 1 1 auto;
+
+    @media screen and (min-width: 450px) {
+      margin-right: 20px;
+    }
+  }
+
+  // .top-footer__button
+
+  &__button {
+    width: 152px;
+    height: 38px;
+    border: 1px solid $white;
+    border-radius: 7px;
+    font-family: $Monrope;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10.7772px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: $blue;
+    transition: all $animation_speed ease 0s;
+
+    &:hover {
+      // color: $white;
+      background: rgba($color: $white, $alpha: .7);
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+      height: 59px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.footer-middle {
+
+  // .footer-middle__col
+
+  &__col {}
+
+  // .footer-middle__col--top
+  &__col--top {
+    @media screen and (max-width: 450px) {
+      order: 0;
+    }
+  }
+
+  // .footer-middle__col--last
+  &__col--last {
+    @media screen and (max-width: 450px) {
+      order: 1;
+    }
+  }
+
+  // .footer-middle__col--middle
+  &__col--middle {
+    @media screen and (max-width: 450px) {
+      order: 2;
+    }
+  }
+
+  // .footer-middle__title
+
+  &__title {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 132%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+
+  // .footer-middle__list-container
+  &__list-container {
+    // display: flex;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+
+
+    @media screen and (min-width: 768px) {
+      gap: 20px;
+    }
+  }
+
+  // .footer-middle__list
+
+  &__list {}
+
+  // .footer-middle__item
+
+  &__item {
+    margin-bottom: 10px;
+  }
+
+  // .footer-middle__link
+
+  &__link {
+    font-family: $Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 132%;
+    color: #FFFFFF;
+    transition: color $animation_speed ease 0s;
+    white-space: nowrap;
+
+    &:hover {
+      color: rgba($color: $white, $alpha: .6);
+    }
+  }
+
+}
+
+.footer-bottom {
+
+  // .footer-bottom__action
+
+  &__action {
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: 450px) {
+      width: 100%;
+    }
+  }
+
+  // .footer-bottom__social
+
+  &__social {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    opacity: .6;
+
+    @media screen and (min-width: 450px) {
+      width: 20px;
+      height: 20px;
+    }
+
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+
+
+
+  }
+
+  // .footer-bottom__phone
+
+  &__phone {
+    font-family: $Monrope;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 123%;
+    letter-spacing: 0.01em;
+    color: $white;
+
+
+    @media screen and (min-width: 450px) {
+      font-size: 13px;
+    }
+
+    @media screen and (max-width: 450px) {
+      text-align: right;
+      flex: 1 1 auto;
+    }
+  }
+
+
 }

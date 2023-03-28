@@ -22,7 +22,8 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "gulp-cli": "^2.3.0",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^7.0.7"
   },
   "devDependencies": {
     "browser-sync": "^2.27.10",

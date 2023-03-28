@@ -1,5 +1,7 @@
 import * as functions from "./modules/functions.js";
 
+import './libs/slider.js'
+
 functions.isWebp();
 
 const spollers_item = document.querySelectorAll(".spollers__item");
@@ -14,6 +16,5 @@ function openSpollers() {
     } else {
         this.classList.remove('_init');
     }
-
-
 }
+

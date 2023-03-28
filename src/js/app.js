@@ -18,3 +18,9 @@ function openSpollers() {
     }
 }
 
+AOS.init({
+    duration: 800,
+    offset: 0,
+    // easing: 'ease-in-quad'
+});
+

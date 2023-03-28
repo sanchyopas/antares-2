@@ -220,6 +220,11 @@
 .find-coast {
     padding: $padding_section 0px;
 
+    // .find-coast--first
+    &--first {
+        padding: 0px 0px $padding_section;
+    }
+
 
     @media screen and (max-width: 650px) {
         padding: $mobile_section_padding 0px;

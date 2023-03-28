@@ -1,39 +1,60 @@
 .hero {
-    // position: relative;
-    padding-bottom: $padding_section 0px;
+    padding: 38px 0px 0px;
+    position: relative;
+
+    @media screen and (min-width: 768px) {}
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50%;
+        background: $blue;
+
+        @media screen and (min-width: 768px) {
+            width: 85%;
+            height: 40%;
+            background: linear-gradient(-310deg, rgba(9, 9, 121, 0) 40%, rgba(9, 9, 121, 0) 20%, $blue 0%);
+        }
+
+        @media screen and (max-width: 600px) {
+            height: 35%;
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60%;
+        height: 40%;
+        z-index: -1;
+    }
 
     // .hero__body
 
     &__body {
         display: flex;
-        flex-direction: column;
-    }
-}
-
-.body-hero {
-    position: relative;
-
-    // .body-hero__top
-
-    &__top {
-        background-color: $blue;
-        padding: 38px 0px;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
     }
 
-    // .body-hero__title
+    // .hero__content
 
-    &__title {}
+    &__content {}
 
-    // .body-hero__bottom
+    // .hero__title
 
-    &__bottom {
-        padding-top: 22px;
+    &__title {
+        margin-bottom: 80px;
     }
 
-    // .body-hero__text
+    // .hero__text
 
     &__text {
-        font-family: $Montserrat;
         font-weight: 500;
         font-size: 16px;
         line-height: 140%;
@@ -42,18 +63,15 @@
         margin-bottom: 24px;
 
         @media screen and (min-width: 768px) {
-            max-width: 450px;
+            max-width: 427px
         }
     }
-}
 
-.hero-body {
-
-    // .hero-body__button
+    // .hero__button
 
     &__button {
-        width: 251px;
-        height: 60px;
+        width: 251.65px;
+        height: 59px;
         background: $blue;
         border-radius: 5px;
         font-family: $Monrope;
@@ -64,16 +82,17 @@
         color: $white;
     }
 
-    // .hero-body__product
+    // .hero__image
 
-    &__product {
-        display: flex;
-        position: absolute;
-        top: 0;
-        right: 0;
-        max-width: 100%;
+    &__image {
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
+
+
 
 .service-list {
     padding: 32px 0px 42px;
@@ -510,6 +529,11 @@
 
     &__btn--next {}
 
+    &__btn--prev.swiper-button-disabled,
+    &__btn--next.swiper-button-disabled {
+        opacity: 0.5;
+    }
+
     // .gallery__btn--all
     &__btn--all {
         width: 130px;
@@ -565,4 +589,111 @@
     .swiper-wrapper {}
 
     .swiper-slide {}
+}
+
+.region {
+    position: relative;
+    padding: 39px 0px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 60%;
+        background: linear-gradient(310deg, rgba(9, 9, 121, 0) 40%, rgba(9, 9, 121, 0) 20%, $blue 0%);
+        z-index: 3;
+
+        @media screen and (max-width: 1240px) {
+            width: 70%;
+        }
+    }
+
+    // .region__body
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 4;
+
+        @media screen and (max-width: 1240px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    // .region__title
+
+    &__title {
+        @media screen and (min-width: 1140px) {
+            margin-right: 20px;
+        }
+    }
+
+    // .region__image
+
+    &__image {
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+
+            @media screen and (max-width: 1125px) {
+                width: 100%;
+                object-position: 0%;
+            }
+        }
+    }
+
+    // .region__content
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(287px, 1fr));
+        gap: 20px;
+
+        @media screen and (max-width: 1240px) {
+            margin-top: 20px;
+        }
+    }
+
+    // .region__text
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: -0.01em;
+
+        color: $white;
+    }
+
+    // .region__mobile--bg
+    &__mobile--bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    // .region--pc
+    &--pc {
+
+
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+    }
+
+    // .region--mobile
+    &--mobile {
+        @media screen and (min-width: 900px) {
+            display: none;
+        }
+
+    }
 }

@@ -14,9 +14,9 @@ const swiper = new Swiper('.swiper', {
     autoHeight: true,
     speed: 800,
 
-    //touchRatio: 0,
-    //simulateTouch: false,
-    loop: true,
+    touchRatio: 0,
+    simulateTouch: false,
+    loop: false,
     // preloadImages: true,
     lazy: true,
 
@@ -47,8 +47,8 @@ const swiper = new Swiper('.swiper', {
 
     // Кнопки "влево/вправо"
     navigation: {
-        prevEl: '.reviews__slider-prev',
-        nextEl: '.reviews__slider-next',
+        prevEl: '.gallery__btn--prev',
+        nextEl: '.gallery__btn--next',
     },
 
     // Брейкпоинты
@@ -103,7 +103,7 @@ const gallery__lider = new Swiper('.gallery__slider', {
             allowTouchMove: true,
         },
         1260: {
-            allowTouchMove: true,
+            allowTouchMove: false,
             spaceBetween: 15,
             slidesPerView: 2,
             slidesPerColumn: 2,

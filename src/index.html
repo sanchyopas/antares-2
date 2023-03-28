@@ -6,19 +6,18 @@
 
 <body>
     @@include('html/_header.html')
-    <h1>New commit</h1>
     <main>
-
+        <h1>Commit home</h1>
         <div class="utp" style="background-image: url(../img/banner2x.jpg);">
             <div class="container">
                 <div class="utp__body">
-                    <h1 class="utp__title _title">
+                    <h1 class="utp__title _title" data-aos="fade-left" data-aos-delay="200">
                         ПРОФЕССИОНАЛЬНЫЕ<br> УСЛУГИ СТО<br> В ТОМСКЕ
                     </h1>
-                    <p class="utp__subtitle">
+                    <p class="utp__subtitle" data-aos="fade-left" data-aos-delay="300">
                         Ремонт и техническое обслуживание легковых автомобилей импортного и отечественного производства
                     </p>
-                    <button class="utp__button">
+                    <button class="utp__button" data-aos="fade-up" data-aos-delay="400">
                         Заказать звонок
                     </button>
                 </div>
@@ -382,7 +381,7 @@
     </main>
 
     @@include('html/_footer.html')
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 

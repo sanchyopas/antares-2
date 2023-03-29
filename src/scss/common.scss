@@ -6,8 +6,8 @@
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol {
     padding: 0;
 }
 
@@ -18,8 +18,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -53,6 +53,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -87,16 +88,6 @@ button {
     cursor: pointer;
 }
 
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-
 .container {
     max-width: $maxWidthContainer;
     margin: auto;
@@ -115,8 +106,16 @@ button {
     text-transform: uppercase;
     color: $white;
 
-    @media screen and (max-width: 648px) {
+    @media screen and (max-width: 700px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 530px) {
         font-size: 22px;
+    }
+
+    @media screen and (max-width: 400px) {
+        font-size: 18px;
     }
 }
 

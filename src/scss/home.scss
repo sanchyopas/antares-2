@@ -273,16 +273,21 @@
         border: 1px solid #C5C5C5;
         border-radius: 5px;
         padding: 10px 24px;
+        height: 64px;
         min-width: 274px;
 
         @media screen and (min-width: 620px) {
             margin-right: 8px;
         }
 
+        @media screen and (max-width: 620px) {
+            width: 100%;
+        }
+
         &:nth-child(2) {
             flex: 1 1 auto;
 
-            @media screen and (max-width: 992px) {
+            @media screen and (max-width: 840px) {
                 margin-right: 0px;
             }
 
@@ -323,7 +328,7 @@
 
     button {
         width: 100%;
-        height: auto;
+        height: 64px;
         background: $blue;
         border-radius: 5px;
         font-family: $Monrope;
@@ -333,14 +338,19 @@
         line-height: 125%;
         letter-spacing: 0.01em;
         color: $white;
+        padding: 8px 0px;
 
         @media screen and (min-width: 620px) {
             width: 247px;
         }
 
-        @media screen and (max-width: 992px) {
-            height: 64px;
+        @media screen and (max-width: 840px) {
             margin-top: 10px;
+            margin-left: 8px;
+        }
+
+        @media screen and (max-width: 620px) {
+            margin-left: 0px;
         }
     }
 }

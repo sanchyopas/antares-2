@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"Услуга 1"
+})
+
+<body>
+    @@include('html/_header.html')
+
+    <main>
+        <div class="hero">
+            <div class="hero__top">
+                <img src="@img/export-list.jpg" alt="" class="hero__top--image">
+                <div class="container">
+                    <div class="hero__top--content">
+                        <h2 class="hero__title _title">Ремонт <br>агрегатов<br> и узлов</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__bottom">
+                <div class="container">
+                    <div class="hero__bottom--content">
+                        <div class="hero__bottom--left">
+                            <p class="hero__bottom--text hero__bottom--single">
+                                При больших наработках или интенсивной эксплуатации техники происходит естественный
+                                износ металлоконструкций в местах их сочленения, поэтому требуется ремонт отверстий.
+                                Диагностика таких поломок выявляет необходимость восстановить геометрическую форму
+                                отверстии (устранение эллипса), чтобы техника не подвергалась быстрому износу или
+                                поломке. Для этого используется расточно-наплавочный комплекс Sir Meccanica WS1 PLUS,
+                                позволяющий быстро наплавить отверстие и расточить его в первоначальный размер.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="find-coast find-coast--first">
+            <div class="container">
+                <div class="find-coast__body">
+                    <h2 class="find-coast__title _title">Узнать стоимость
+                        <br>ремонта
+                    </h2>
+                    <form action="#" class="form">
+                        <div class="form__input">
+                            <label for="phone">Ваш телефон</label>
+                            <input type="tel" id="phone" placeholder="+ 7 999 999 99 99 ">
+                        </div>
+                        <div class="form__input">
+                            <label for="message">Опишите вашу проблему</label>
+                            <textarea id="message"></textarea>
+                        </div>
+                        <button type="submit">Отправить
+                            заявку</button>
+                    </form>
+                    <p class="find-coast__info">Менеджер
+                        свяжется с вами в течение 24 часов по указанному номеру</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-list" style="background-image: url(../img/export-list.jpg);">
+            <img src="@img/export-list.jpg" alt="" class="service-list__bg--mobile">
+            <div class="container">
+                <div class="service-list__body">
+                    <div class="service-list__left">
+                        <p class="service-list__personal">
+                            ВЫСОКОКВАЛИФИЦИРОВАННЫЙ ПЕРСОНАЛ
+                        </p>
+                        <h2 class="service-list__title _title">
+                            современное <br>специализированное<br> оборудование
+                        </h2>
+                    </div>
+                    <div class="service-list__right">
+                        <div class="service-list__right--body">
+                            <div class="service-list__item">
+                                Полный цикл ремонта
+                            </div>
+                            <div class="service-list__item">
+                                100% решение проблемы
+                            </div>
+                            <div class="service-list__item">
+                                Расточка и гильзовка распределителей рулевых реек
+                            </div>
+                            <div class="service-list__item">
+                                Восстановление, шлифовка и полировка валов рулевых реек
+                            </div>
+                            <div class="service-list__item">
+                                Единственный в Томске стенд для проверки рулевых реек под нагрузкой до 1 тонны
+                            </div>
+                            <div class="service-list__item">
+                                Гарантия на работы 6 месяцев, независимо от пробега
+                            </div>
+                        </div>
+                        <div class="service-list__item service-list__item--last">
+                            Уникальные технологии по ремонту и восстановлению рулевых реек с помощью специального
+                            оборудования и инструмента “PST service Russia”
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery">
+            <div class="container">
+                <div class="gallery__body">
+                    <div class="gallery__bottom">
+                        <div class="gallery__slider swiper">
+                            <div class="gallery__top">
+                                <h2 class="gallery__title _title">Фотогалерея</h2>
+                                <div class="gallery__button">
+                                    <div class="gallery__btn--prev">
+                                        <img src="@img/icons/slider-chevron.svg" alt="">
+                                    </div>
+                                    <div class="gallery__btn--next">
+                                        <img src="@img/icons/slider-chevron.svg" alt="">
+                                    </div>
+                                    <a href="#" class="gallery__btn--all">Все
+                                        фото</a>
+                                </div>
+                            </div>
+                            <div class="gallery__wrapper swiper-wrapper">
+                                <div class="gallery__slide swiper-slide">
+                                    <img src="@img/photo-1.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide">
+                                    <img src="@img/photo-2.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide">
+                                    <img src="@img/photo-3.jpg" alt="">
+                                </div>
+                                <div class="gallery__slide swiper-slide">
+                                    <img src="@img/photo-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="gallery__button gallery__button--mobile">
+                                <div class="gallery__btn--prev">
+                                    <img src="@img/icons/slider-chevron.svg" alt="">
+                                </div>
+                                <div class="gallery__btn--next">
+                                    <img src="@img/icons/slider-chevron.svg" alt="">
+                                </div>
+                                <a href="#" class="gallery__btn--all">Все фото</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include('html/_footer.html')
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

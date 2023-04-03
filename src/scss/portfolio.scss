@@ -1,0 +1,30 @@
+.portfolio {
+
+    // .portfolio__title
+
+    &__title {
+        color: $blue;
+        text-align: center;
+        margin: 100px 0px 50px;
+    }
+
+    // .portfolio__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin-bottom: 50px;
+
+        a {
+            display: flex;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

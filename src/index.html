@@ -7,16 +7,17 @@
 <body>
     @@include('html/_header.html')
     <main>
+        <h1>Commit</h1>
         <div class="utp" style="background-image: url(../img/banner2x.jpg);">
             <div class="container">
                 <div class="utp__body">
-                    <h1 class="utp__title _title" data-aos="fade-left" data-aos-delay="200">
+                    <h1 class="utp__title _title">
                         ПРОФЕССИОНАЛЬНЫЕ<br> УСЛУГИ СТО<br> В ТОМСКЕ
                     </h1>
-                    <p class="utp__subtitle" data-aos="fade-left" data-aos-delay="300">
+                    <p class="utp__subtitle">
                         Ремонт и техническое обслуживание легковых автомобилей импортного и отечественного производства
                     </p>
-                    <button class="utp__button" data-aos="fade-up" data-aos-delay="400">
+                    <button class="utp__button" data-popup=".popup">
                         Заказать звонок
                     </button>
                 </div>
@@ -33,12 +34,13 @@
                         <p class="grid__subtitle">
                             Ремонт, восстановление, изготовление карданных валов для любых видов техники
                         </p>
-                        <button type="button" class="grid__btn">Записаться на диагностику</button>
+                        <button type="button" class="grid__btn" data-popup=".popup">Записаться на диагностику</button>
                     </div>
                 </div>
             </div>
+
             <div class="grid__image">
-                <img src="@img/grid1-2x.jpg" alt="Карданные валы">
+                <img src="@img/grid1-2x.jpg" alt="Карданные валы" class="">
             </div>
         </div>
 
@@ -55,7 +57,7 @@
                         <p class="grid__subtitle">
                             Ремонт и восстановление рулевых реек
                         </p>
-                        <button type="button" class="grid__btn">Записаться на диагностику</button>
+                        <button type="button" class="grid__btn" data-popup=".popup">Записаться на диагностику</button>
                     </div>
                 </div>
             </div>
@@ -89,7 +91,8 @@
                     </h2>
                     <p class="offer__text">
                         Профессиональные знания, опыт, а так же применяемое современное оборудование является нашим
-                        преимуществом и помогает нам гарантировать качество работ, минимальные сроки и высокий уровень
+                        преимуществом и помогает нам гарантировать качество работ, минимальные сроки и высокий
+                        уровень
                         сервиса.
                     </p>
                 </div>
@@ -108,7 +111,8 @@
                 <div class="container">
                     <p class="offer__text">
                         Профессиональные знания, опыт, а так же применяемое современное оборудование является нашим
-                        преимуществом и помогает нам гарантировать качество работ, минимальные сроки и высокий уровень
+                        преимуществом и помогает нам гарантировать качество работ, минимальные сроки и высокий
+                        уровень
                         сервиса.
                     </p>
                 </div>
@@ -151,7 +155,8 @@
                             <span class="grid-service__text">Шиномонтаж</span>
                         </a>
                         <a href="#" class="grid-service__item" style="background-image: url(../img/service/11@2x.jpg);">
-                            <span class="grid-service__text">Промывка радиатора<br> печки и системы охлаждения</span>
+                            <span class="grid-service__text">Промывка радиатора<br> печки и системы
+                                охлаждения</span>
                         </a>
                         <a href="#" class="grid-service__item" style="background-image: url(../img/service/12@2x.jpg);">
                             <span class="grid-service__text">Заправка<br> автокондиционера</span>
@@ -254,7 +259,8 @@
                                 <img src="@img/icons/start-opacity.svg" alt="">
                             </div>
                             <p class="reviews__text">
-                                В данном сервисе облуживаюсь давно. Устраивает абсолютно всё - качество, цены на работы
+                                В данном сервисе облуживаюсь давно. Устраивает абсолютно всё - качество, цены на
+                                работы
                                 и запасные части, быстро решают все проблемы
                             </p>
                             <p class="reviews__name">Виктор Рачков</p>
@@ -267,7 +273,8 @@
                                 <img src="@img/icons/start-opacity.svg" alt="">
                             </div>
                             <p class="reviews__text">
-                                В данном сервисе облуживаюсь давно. Устраивает абсолютно всё - качество, цены на работы
+                                В данном сервисе облуживаюсь давно. Устраивает абсолютно всё - качество, цены на
+                                работы
                                 и запасные части, быстро решают все проблемы
                             </p>
                             <p class="reviews__name">Виктор Мачков</p>
@@ -280,7 +287,8 @@
                                 <img src="@img/icons/start-opacity.svg" alt="">
                             </div>
                             <p class="reviews__text">
-                                В данном сервисе облуживаюсь давно. Устраивает абсолютно всё - качество, цены на работы
+                                В данном сервисе облуживаюсь давно. Устраивает абсолютно всё - качество, цены на
+                                работы
                                 и запасные части, быстро решают все проблемы
                             </p>
                             <p class="reviews__name">Виктор Жачков</p>
@@ -372,13 +380,10 @@
                 </div>
             </div>
         </div>
-        <!-- <picture>
-            <source srcset="@img/banner.jpg" media="(min-width: 600px)">
-            <img src=" @img/banner-mobile.jpg" alt="banner-mobile">
-        </picture> -->
     </main>
 
     @@include('html/_footer.html')
+    @@include('html/popup.html')
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/app.min.js"></script>
 </body>

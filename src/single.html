@@ -25,7 +25,8 @@
                                 Современное специализированное оборудование и высоко квалифицированный персонална службе
                                 для вашего автомобиля
                             </p>
-                            <button type="button" class="hero__bottom--button">Заказать звонок</button>
+                            <button type="button" class="hero__bottom--button" data-popup=".popup">Заказать
+                                звонок</button>
                         </div>
                         <div class="hero__bottom--right">
                             <div class="hero__bottom--image">
@@ -161,7 +162,8 @@
                             </p>
                         </div>
                         <div class="prices__item">
-                            <button type="button" class="prices__item--button">Отправить заявку</button>
+                            <button type="button" class="prices__item--button" data-popup=".popup">Отправить
+                                заявку</button>
                         </div>
                     </div>
                 </div>
@@ -246,14 +248,13 @@
                             <div class="gallery__top">
                                 <h2 class="gallery__title _title">Фотогалерея</h2>
                                 <div class="gallery__button">
-                                    <div class="gallery__btn--prev">
+                                    <div class="gallery__btn--prev" id="gallery__btn--prev">
+                                        <img src="@img/icons/chevron-left.svg" alt="">
+                                    </div>
+                                    <div class="gallery__btn--next" id="gallery__btn--next">
                                         <img src="@img/icons/slider-chevron.svg" alt="">
                                     </div>
-                                    <div class="gallery__btn--next">
-                                        <img src="@img/icons/slider-chevron.svg" alt="">
-                                    </div>
-                                    <a href="/portfolio.html" class="gallery__btn--all">Все
-                                        фото</a>
+                                    <a href="/portfolio.html" class="gallery__btn--all">Все фото</a>
                                 </div>
                             </div>
                             <div class="gallery__wrapper swiper-wrapper">
@@ -271,10 +272,10 @@
                                 </div>
                             </div>
                             <div class="gallery__button gallery__button--mobile">
-                                <div class="gallery__btn--prev">
+                                <div class="gallery__btn--prev" id="gallery__btn--prev">
                                     <img src="@img/icons/slider-chevron.svg" alt="">
                                 </div>
-                                <div class="gallery__btn--next">
+                                <div class="gallery__btn--next" id="gallery__btn--next">
                                     <img src="@img/icons/slider-chevron.svg" alt="">
                                 </div>
                                 <a href="/portfolio.html" class="gallery__btn--all">Все фото</a>

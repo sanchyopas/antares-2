@@ -8,35 +8,29 @@
     @@include('html/_header.html')
 
     <main>
-        <div class="hero hero--three">
-            <div class="hero__top">
-                <img src="@img/export-list.jpg" alt="" class="hero__top--image">
-                <div class="container">
-                    <div class="hero__top--content">
-                        <h2 class="hero__title _title">Ремонт <br>агрегатов<br> и узлов</h2>
-                    </div>
+        <div class="hero-three">
+            <div class="container">
+                <div class="hero-three__body">
+                    <h1 class="_title hero-three__title">
+                        Ремонт<br> агрегатов и узлов
+                    </h1>
                 </div>
             </div>
-            <div class="hero__bottom">
-                <div class="container">
-                    <div class="hero__bottom--content">
-                        <div class="hero__bottom--left">
-                            <p class="hero__bottom--text hero__bottom--single">
-                                При больших наработках или интенсивной эксплуатации техники происходит естественный
-                                износ металлоконструкций в местах их сочленения, поэтому требуется ремонт отверстий.
-                                Диагностика таких поломок выявляет необходимость восстановить геометрическую форму
-                                отверстии (устранение эллипса), чтобы техника не подвергалась быстрому износу или
-                                поломке. Для этого используется расточно-наплавочный комплекс Sir Meccanica WS1 PLUS,
-                                позволяющий быстро наплавить отверстие и расточить его в первоначальный размер.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-three__image">
+                <img src="@img/agregator.png" alt="">
             </div>
         </div>
 
         <div class="find-coast find-coast--first">
             <div class="container">
+                <p class="hero-three__text">
+                    При больших наработках или интенсивной эксплуатации техники происходит естественный износ
+                    металлоконструкций в местах их сочленения, поэтому требуется ремонт отверстий. Диагностика таких
+                    поломок выявляет необходимость восстановить геометрическую форму отверстии (устранение эллипса),
+                    чтобы техника не подвергалась быстрому износу или поломке. Для этого используется
+                    расточно-наплавочный комплекс Sir Meccanica WS1 PLUS, позволяющий быстро наплавить отверстие и
+                    расточить его в первоначальный размер.
+                </p>
                 <div class="find-coast__body">
                     <h2 class="find-coast__title _title">Узнать стоимость
                         <br>ремонта
@@ -59,7 +53,7 @@
             </div>
         </div>
 
-        <div class="service-list" style="background-image: url(../img/export-list.jpg);">
+        <div class="service-list service-list--three" style="background-image: url(../img/export-list.jpg);">
             <img src="@img/export-list.jpg" alt="" class="service-list__bg--mobile">
             <div class="container">
                 <div class="service-list__body">
@@ -72,24 +66,24 @@
                         </h2>
                     </div>
                     <div class="service-list__right">
-                        <div class="service-list__right--body">
+                        <div class="service-list--body">
                             <div class="service-list__item">
-                                Полный цикл ремонта
+                                Узкая<br> специализация
                             </div>
                             <div class="service-list__item">
-                                100% решение проблемы
+                                Полный<br> ассортимент
                             </div>
                             <div class="service-list__item">
-                                Расточка и гильзовка распределителей рулевых реек
+                                100% решение <br>проблемы
                             </div>
                             <div class="service-list__item">
-                                Восстановление, шлифовка и полировка валов рулевых реек
+                                Стенд <br>для проверки
                             </div>
                             <div class="service-list__item">
-                                Единственный в Томске стенд для проверки рулевых реек под нагрузкой до 1 тонны
+                                Полный закрытый <br>цикл ремонта
                             </div>
                             <div class="service-list__item">
-                                Гарантия на работы 6 месяцев, независимо от пробега
+                                Ремонт сложных агрегатов
                             </div>
                         </div>
                         <div class="service-list__item service-list__item--last">
@@ -110,13 +104,13 @@
                             <div class="gallery__top">
                                 <h2 class="gallery__title _title">Фотогалерея</h2>
                                 <div class="gallery__button">
-                                    <div class="gallery__btn--prev">
+                                    <div class="gallery__btn--prev" id="gallery__btn--prev">
+                                        <img src="@img/icons/chevron-left.svg" alt="">
+                                    </div>
+                                    <div class="gallery__btn--next" id="gallery__btn--next">
                                         <img src="@img/icons/slider-chevron.svg" alt="">
                                     </div>
-                                    <div class="gallery__btn--next">
-                                        <img src="@img/icons/slider-chevron.svg" alt="">
-                                    </div>
-                                    <a href="#" class="gallery__btn--all">Все
+                                    <a href="/portfolio.html" class="gallery__btn--all">Все
                                         фото</a>
                                 </div>
                             </div>
@@ -135,13 +129,13 @@
                                 </div>
                             </div>
                             <div class="gallery__button gallery__button--mobile">
-                                <div class="gallery__btn--prev">
+                                <div class="gallery__btn--prev" id="gallery__btn--prev">
+                                    <img src="@img/icons/chevron-left.svg" alt="">
+                                </div>
+                                <div class="gallery__btn--next" id="gallery__btn--next">
                                     <img src="@img/icons/slider-chevron.svg" alt="">
                                 </div>
-                                <div class="gallery__btn--next">
-                                    <img src="@img/icons/slider-chevron.svg" alt="">
-                                </div>
-                                <a href="#" class="gallery__btn--all">Все фото</a>
+                                <a href="/portfolio.html" class="gallery__btn--all">Все фото</a>
                             </div>
                         </div>
                     </div>

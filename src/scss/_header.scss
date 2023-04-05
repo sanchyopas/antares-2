@@ -21,6 +21,17 @@
 }
 
 .burger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+
+  img {
+    max-width: 100%;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -62,6 +73,10 @@
   &__action {}
 }
 
+.top-menu__active {
+  left: 0% !important;
+}
+
 .top-menu {
   @media screen and (max-width: 768px) {
     display: flex;
@@ -70,14 +85,36 @@
     justify-content: center;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 1000%;
     width: 100%;
     height: 100%;
     background-color: rgba($color: $white, $alpha: 1);
     z-index: 99;
-    overflow: auto;
-    display: none;
+    overflow-y: auto;
+    transition: left .3s ease 0s;
   }
+
+  // .top-menu__close
+  &__close {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: lowercase;
+    font-weight: 900;
+    border-radius: 5px;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
 
   // .top-menu__list
 
@@ -350,7 +387,6 @@ body._touch .menu-bottom__item._active .menu-bottom__arrow {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: red;
     max-height: 0px;
     overflow: hidden;
   }

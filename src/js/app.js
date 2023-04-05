@@ -45,12 +45,6 @@ if (isMobile.any()) {
 
 // new WOW().init();
 
-
-function openSubMenu(e) {
-    console.log('click');
-
-}
-
 // Плавная прокрутка к элементу
 
 const anchorLink = document.querySelectorAll('.menu-link[data-goto]');
@@ -127,11 +121,30 @@ window.addEventListener('keydown', function (e) {
     }
 })
 
+let burger = document.querySelector('.burger');
+
+if (burger) {
+    burger.addEventListener('click', function (e) {
+        document.querySelector('.top-header__nav').classList.add('top-menu__active');
+        document.documentElement.classList.add('_lock');
+    });
+}
+
+let close = document.querySelector('.top-menu__close');
+if (close) {
+    close.addEventListener('click', function (e) {
+        document.querySelector('.top-header__nav').classList.remove('top-menu__active');
+        document.documentElement.classList.remove('_lock');
+    })
+}
 
 
 
 
+// function openSubMenu(e) {
+//     console.log('click');
 
+// }
 
 // let itemMenuList = document.querySelectorAll('.menu-bottom__item');
 
@@ -145,7 +158,5 @@ window.addEventListener('keydown', function (e) {
 //             <span class="menu-bottom__arrow" style="background-image: url(../img/icons/arrow-down.svg);"></span>
 //             `;
 //         }
-
-
 //     })
 // }

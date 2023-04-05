@@ -6,6 +6,7 @@
           <img src="@img/logo-mobile.png" alt="Logo">
         </a>
         <nav class="top-header__nav top-menu">
+          <button class="top-menu__close">X</button>
           <ul class="top-menu__list">
             <li class="top-menu__item">
               <a href="/about.html" class="top-menu__link menu-link ">О нас</a>
@@ -77,7 +78,7 @@
               <a href="/portfolio.html" class="menu-bottom__link menu-link">Портфолио</a>
             </li>
             <li class="menu-bottom__item">
-              <a href="#" class="menu-bottom__link menu-link">Партнеры</a>
+              <a href="/partners.html" class="menu-bottom__link menu-link">Партнеры</a>
             </li>
             <li class="menu-bottom__item">
               <a href="#" class="menu-bottom__link menu-link" data-goto=".gallery">Фотогалерея</a>
@@ -98,7 +99,7 @@
         <div class="top-header__action action-header">
           <!-- <a href="tel:+9654323456" class="action-header__phone">8 965 432 34 56</a> -->
           <p class="action-header__question">Остались вопросы?</p>
-          <button class="action-header__button">Напишите нам</button>
+          <button class="action-header__button" data-popup=".popup">Напишите нам</button>
           <div class=" action-header__social action-header__social--pc">
             <a href="#">
               <img src="@img/icons/whatsapp.svg" alt="">
@@ -110,7 +111,9 @@
               <img src="@img/icons/telegram.svg" alt="">
             </a>
           </div>
-          <button type="button" class="burger">X</button>
+          <button type="button" class="burger">
+            <img src="@img/icons/burger.svg" alt="">
+          </button>
         </div>
       </div>
     </div>
@@ -174,7 +177,7 @@
           <a href="/portfolio.html" class="menu-bottom__link">Портфолио</a>
         </li>
         <li class="menu-bottom__item">
-          <a href="#" class="menu-bottom__link">Партнеры</a>
+          <a href="/partners.html" class="menu-bottom__link">Партнеры</a>
         </li>
         <li class="menu-bottom__item">
           <a href="#" class="menu-bottom__link" data-goto=".gallery">Фотогалерея</a>

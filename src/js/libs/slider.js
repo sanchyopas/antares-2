@@ -58,10 +58,40 @@ const gallery__lider = new Swiper('.gallery__slider', {
         },
         1260: {
             spaceBetween: 15,
-
             slidesPerColumn: 2,
             loop: false,
         }
     }
 
 });
+
+const swiperPrev = document.getElementById('reviews__prev');
+const swiperNext = document.getElementById('reviews__next');
+
+if (swiperPrev) {
+    swiperPrev.addEventListener('click', () => {
+        swiper.slidePrev();
+    });
+}
+
+if (swiperNext) {
+    swiperNext.addEventListener('click', () => {
+        swiper.slideNext();
+    });
+}
+
+
+const galleryPrev = document.getElementById('gallery__btn--prev');
+const galleryNext = document.getElementById('gallery__btn--next');
+
+if (galleryPrev) {
+    galleryPrev.addEventListener('click', () => {
+        gallery__lider.slidePrev();
+    })
+}
+
+if (galleryNext) {
+    galleryNext.addEventListener('click', () => {
+        gallery__lider.slideNext();
+    })
+}

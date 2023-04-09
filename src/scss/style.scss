@@ -7,6 +7,10 @@
 // Удалить файл fonts.scss, если произошли какие-то изменения со шрифтами
 @import "fonts";
 
+:root {
+  --animate-duration: .5s;
+}
+
 
 // Переменны (цвета, скорость transition и пр)
 @import "_variables";
@@ -51,3 +55,26 @@ body {
 
 // import styles bundle
 @import "./slider";
+
+@media only screen and (max-width : 768px) {
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+}

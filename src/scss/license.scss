@@ -5,7 +5,11 @@
     &__title {
         color: $blue;
         text-align: center;
-        margin: 100px 0px 50px;
+        margin: 50px 0px 50px;
+
+        @media screen and (max-width: 768px) {
+            margin: 30px 0px 30px;
+        }
     }
 
     // .license__body
@@ -21,6 +25,7 @@
             border-radius: 10px;
             overflow: hidden;
             position: relative;
+            border: 1px solid $blue;
 
             img {
                 max-width: 100%;

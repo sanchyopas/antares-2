@@ -4,6 +4,7 @@ import * as functions from "./modules/functions.js";
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js";
 
 import './libs/slider.js'
+
 functions.isWebp();
 
 const spollers_item = document.querySelectorAll(".spollers__item");
@@ -43,7 +44,7 @@ if (isMobile.any()) {
 
 }
 
-// new WOW().init();
+
 
 // Плавная прокрутка к элементу
 

@@ -7,6 +7,22 @@
     // .about__title
 
     &__title {
+        text-align: center;
         color: $blue;
+        margin: 50px 0px;
+
+        @media screen and (max-width: 768px) {
+            margin: 30px 0px;
+        }
+    }
+
+    // .about__text
+
+    &__text {
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
     }
 }

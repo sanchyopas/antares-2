@@ -1,188 +1,80 @@
-<div class="header">
-  <div class="header__content">
+<header class="header">
+  <div class="header__top">
     <div class="container">
-      <div class="header__top top-header">
-        <a href="/" class="top-header__logo">
-          <img src="@img/logo-mobile.png" alt="Logo">
+      <div class="header__body--top">
+        <a href="/" class="header__logo">
+          <img src="@img/logo-mobile.png" alt="">
         </a>
-        <nav class="top-header__nav top-menu">
-          <button class="top-menu__close">X</button>
-          <ul class="top-menu__list">
-            <li class="top-menu__item">
-              <a href="/about.html" class="top-menu__link menu-link ">О нас</a>
-            </li>
-            <li class="top-menu__item">
-              <a href="/license.html" class="top-menu__link menu-link">Лицензия и качество</a>
-            </li>
-            <li class="top-menu__item">
-              <a href="#" class="top-menu__link menu-link" data-goto=".contact">Как нас найти</a>
-            </li>
-            <li class="top-menu__item">
-              <a href="#" class="top-menu__link menu-link" data-goto=".contact">Контакты</a>
-            </li>
-          </ul>
-          <ul class="bottom-header__menu menu-bottom menu-bottom--mb">
-            <li class="menu-bottom__item">
-              <a href="#" class="menu-bottom__link menu-link">Услуги</a>
-              <span class="menu-bottom__arrow" style="background-image: url(../img/icons/arrow-down.svg);"></span>
-              <ul class="menu-bottom__submenu submenu">
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Ремонт карданных валов</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Ремонт рулевых реек</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Диагностика</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Эндоскопия авто</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Ремонт агрегатов и узлов</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Ремонт подвески</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Техническое обслуживание</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Ремонт тормозной системы</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Ремонт выхлопной системы</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Ремонт и обслуживание топливной системы</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Развал схождение</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Шиномонтаж</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Промывка радиатора печки и системы охлаждения</a>
-                </li>
-                <li class="submenu__item">
-                  <a href="#" class="submenu__link">Заправка автокондиционера</a>
-                </li>
-
-              </ul>
-            </li>
-            <li class="menu-bottom__item">
-              <a href="#" class="menu-bottom__link menu-link" data-goto=".faq">Вопросы и ответы</a>
-            </li>
-            <li class="menu-bottom__item">
-              <a href="/portfolio.html" class="menu-bottom__link menu-link">Портфолио</a>
-            </li>
-            <li class="menu-bottom__item">
-              <a href="/partners.html" class="menu-bottom__link menu-link">Партнеры</a>
-            </li>
-            <li class="menu-bottom__item">
-              <a href="#" class="menu-bottom__link menu-link" data-goto=".gallery">Фотогалерея</a>
-            </li>
-          </ul>
-          <div class="action-header__social action-header__social--mb">
-            <a href="#">
-              <img src="@img/icons/whatsapp.svg" alt="">
-            </a>
-            <a href="#">
-              <img src="@img/icons/vk.svg" alt="">
-            </a>
-            <a href="#">
-              <img src="@img/icons/telegram.svg" alt="">
-            </a>
-          </div>
-        </nav>
-        <div class="top-header__action action-header">
-          <!-- <a href="tel:+9654323456" class="action-header__phone">8 965 432 34 56</a> -->
-          <p class="action-header__question">Остались вопросы?</p>
-          <button class="action-header__button" data-popup=".popup">Напишите нам</button>
-          <div class=" action-header__social action-header__social--pc">
-            <a href="#">
-              <img src="@img/icons/whatsapp.svg" alt="">
-            </a>
-            <a href="#">
-              <img src="@img/icons/vk.svg" alt="">
-            </a>
-            <a href="#">
-              <img src="@img/icons/telegram.svg" alt="">
-            </a>
-          </div>
-          <button type="button" class="burger">
-            <img src="@img/icons/burger.svg" alt="">
-          </button>
+        <ul class="header__menu menu">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О нас</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Лицензии и качество</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Как нас найти</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+        <div class="header__question">
+          <p>Остались вопросы ?</p>
+          <button type="button">Напишите нам</button>
         </div>
+        <div class="header__social">
+          <a href="#"><img src="@img/icons/vk.svg" alt=""></a>
+          <a href="#"><img src="@img/icons/telegram.svg" alt=""></a>
+          <a href="#"><img src="@img/icons/whatsapp.svg" alt=""></a>
+        </div>
+        <button type="button" class="header__burger">X</button>
       </div>
     </div>
   </div>
-  <div class="header__bottom bottom-header">
+  <div class="header__bottom">
     <div class="container">
-      <ul class="bottom-header__menu menu-bottom menu-bottom--pc">
-        <li class="menu-bottom__item">
-          <a href="#" class="menu-bottom__link">Услуги</a>
-          <span class="menu-bottom__arrow" style="background-image: url(../img/icons/arrow-down.svg);"></span>
-          <ul class="menu-bottom__submenu submenu">
+      <ul class="bottom__menu">
+        <li class="bottom__item" data-goto=".service">
+          Услуги
+          <span><img src="@img/icons/arrow-down.svg" alt=""></span>
+          <ul class="submenu">
             <li class="submenu__item">
-              <a href="#" class="submenu__link">Ремонт карданных валов</a>
+              <a href="#" class="submenu__link">УслугаУслугаУслугаУслугаУслугаУслугаУслугаУслуга</a>
             </li>
             <li class="submenu__item">
-              <a href="#" class="submenu__link">Ремонт рулевых реек</a>
+              <a href="#" class="submenu__link">Услуга</a>
             </li>
             <li class="submenu__item">
-              <a href="#" class="submenu__link">Диагностика</a>
+              <a href="#" class="submenu__link">Услуга</a>
             </li>
             <li class="submenu__item">
-              <a href="#" class="submenu__link">Эндоскопия авто</a>
+              <a href="#" class="submenu__link">Услуга</a>
             </li>
             <li class="submenu__item">
-              <a href="#" class="submenu__link">Ремонт агрегатов и узлов</a>
+              <a href="#" class="submenu__link">Услуга</a>
             </li>
             <li class="submenu__item">
-              <a href="#" class="submenu__link">Ремонт подвески</a>
+              <a href="#" class="submenu__link">Услуга</a>
             </li>
             <li class="submenu__item">
-              <a href="#" class="submenu__link">Техническое обслуживание</a>
+              <a href="#" class="submenu__link">Услуга</a>
             </li>
             <li class="submenu__item">
-              <a href="#" class="submenu__link">Ремонт тормозной системы</a>
+              <a href="#" class="submenu__link">Услуга</a>
             </li>
             <li class="submenu__item">
-              <a href="#" class="submenu__link">Ремонт выхлопной системы</a>
+              <a href="#" class="submenu__link">Услуга</a>
             </li>
-            <li class="submenu__item">
-              <a href="#" class="submenu__link">Ремонт и обслуживание топливной системы</a>
-            </li>
-            <li class="submenu__item">
-              <a href="#" class="submenu__link">Развал схождение</a>
-            </li>
-            <li class="submenu__item">
-              <a href="#" class="submenu__link">Шиномонтаж</a>
-            </li>
-            <li class="submenu__item">
-              <a href="#" class="submenu__link">Промывка радиатора печки и системы охлаждения</a>
-            </li>
-            <li class="submenu__item">
-              <a href="#" class="submenu__link">Заправка автокондиционера</a>
-            </li>
-
           </ul>
         </li>
-        <li class="menu-bottom__item">
-          <a href="#" class="menu-bottom__link menu-link" data-goto=".faq">Вопросы и ответы</a>
+        <li class="bottom__item" data-goto=".questions"><a href="#" class="bottom__link">Вопросы и ответы</a></li>
+        <li class="bottom__item" data-goto=".questions">
+          <a href="#" class="bottom__link">Портфолио</a>
         </li>
-        <li class="menu-bottom__item">
-          <a href="/portfolio.html" class="menu-bottom__link">Портфолио</a>
-        </li>
-        <li class="menu-bottom__item">
-          <a href="/partners.html" class="menu-bottom__link">Партнеры</a>
-        </li>
-        <li class="menu-bottom__item">
-          <a href="#" class="menu-bottom__link" data-goto=".gallery">Фотогалерея</a>
-        </li>
+        <li class="bottom__item" data-goto=".questions"><a href="#" class="bottom__link">Партнеры</a></li>
+        <li class="bottom__item" data-goto=".questions"><a href="#" class="bottom__link">Фотогалерея</a></li>
       </ul>
     </div>
   </div>
-</div>
+</header>

@@ -1,0 +1,137 @@
+.articles {
+
+    // .articles__title
+
+    &__title {
+        color: $blue;
+        padding: 50px 0px;
+        text-align: center;
+    }
+
+    // .articles__body
+
+    &__body {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    // .articles__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba($color: $black, $alpha: 0);
+        padding: 10px;
+        border-radius: 5px;
+        transition: border $animation_speed ease 0s;
+
+        &:hover {
+            border: 1px solid rgba($color: $black, $alpha: .1);
+        }
+    }
+
+    // .articles__image
+
+    &__image {
+        img {
+            object-fit: cover;
+            min-height: 300px;
+            max-height: 300px;
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+
+    // .articles__name
+
+    &__name {
+        flex: 1 1 auto;
+        color: $black;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 20px 0px;
+    }
+
+    // .articles__btn
+
+    &__btn {
+        font-family: $Monrope;
+        background-color: $blue;
+        color: $white;
+        border-radius: 5px;
+        height: 60px;
+        font-weight: 600;
+        transition: all $animation_speed ease 0s;
+
+        &:hover {
+            opacity: .95;
+        }
+    }
+}
+
+.page-article {
+
+    // .page-article__body
+
+    &__body {
+        padding: 50px 0px;
+    }
+
+    // .page-article__top
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 920px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    // .page-article__image
+
+    &__image {
+
+        @media screen and (min-width: 768px) {
+            margin-right: 20px;
+        }
+
+        img {
+            min-width: 300px;
+            min-height: 300px;
+        }
+
+        @media screen and (max-width: 920px) {
+            order: 1;
+        }
+    }
+
+    // .page-article__title
+
+    &__title {
+        font-size: 50px;
+        color: $blue;
+
+        @media screen and (max-width: 920px) {
+            order: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    }
+
+    // .page-article__bottom
+
+    &__bottom {
+        margin-top: 30px;
+    }
+
+    // .page-article__text
+
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}

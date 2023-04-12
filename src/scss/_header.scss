@@ -182,7 +182,6 @@
     font-size: 14px;
     line-height: 132%;
     color: $blue;
-    padding: 10px 0px;
     position: relative;
     display: flex;
     align-items: center;
@@ -202,9 +201,8 @@
 
     @media screen and (max-width: 769px) {
       font-size: 17px;
+      padding: 10px 0px;
     }
-
-
   }
 }
 
@@ -282,7 +280,7 @@
   padding: 20px;
   z-index: 12;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     transform: translate(0%, 10%);
     opacity: 0;
     visibility: hidden;
@@ -291,16 +289,15 @@
     min-width: 350px;
   }
 
-  @media screen and (max-width: 768px) {
-    position: relative;
-    flex: 1 1 100%;
+  @media screen and (max-width: 769px) {
+    position: fixed;
     top: 0;
-    left: 0;
-    display: none;
-    justify-content: center;
-    align-items: flex-end;
-    flex-direction: column;
-    padding: 10px 20px 0px;
+    left: 200%;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    z-index: 99;
+    transition: left $animation_speed ease 0s;
   }
 
   // .submenu__item
@@ -313,13 +310,13 @@
       display: block;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       &:not(:last-child) {
         margin-bottom: 15px;
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       text-align: right;
     }
   }
@@ -338,12 +335,45 @@
       color: $black;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 769px) {
       padding: 7px 0px;
       display: block;
       font-size: 15px;
     }
   }
+}
+
+.submenu-mobile {
+
+  .arrow-submenu {
+    display: block;
+    padding: 0px 10px 0px;
+  }
+
+  .submenu__item {
+    text-align: left;
+  }
+}
+
+.menu__item--mobile {
+  display: flex;
+  align-items: center;
+
+  span {
+    transform: rotate(-90deg);
+    padding-top: 10px;
+    padding-right: 2px;
+  }
+
+  @media screen and (min-width: 769px) {
+    display: none;
+  }
+}
+
+.submenu-mobile.active,
+.sub-submenu-mobile.active {
+  left: 0%;
+  z-index: 120;
 }
 
 .menu__arrow {
@@ -357,33 +387,13 @@ body._pc .bottom__item:hover .submenu {
   transform: translate(0%, 0%);
 }
 
-body._touch .bottom__link {
-  flex: 1 1 auto;
-}
-
-body._touch .bottom__item._active .menu__arrow {
-  transform: rotate(-180deg);
-}
-
-@media screen and (min-width: 769px) {
-  body._touch .bottom__item._active .submenu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-    transform: translate(0%, 0%);
-  }
-}
-
-@media screen and (max-width: 769px) {
-  .bottom__item._active .submenu {
-    display: flex;
-  }
-
-}
-
-.menu__active {
-  left: 0 !important;
+.menu.menu__active {
+  left: 0%;
   z-index: 100;
+}
+
+.left {
+  left: -100% !important;
 }
 
 .sub-submenu {
@@ -409,6 +419,23 @@ body._touch .bottom__item._active .menu__arrow {
 
   &:hover {
     color: $black;
+  }
+}
+
+.sub-submenu-mobile {
+  position: fixed;
+  top: 0;
+  left: 200%;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+  z-index: 130;
+  display: flex;
+  flex-direction: column;
+  transition: left $animation_speed ease 0s;
+
+  @media screen and (min-width: 769px) {
+    display: none;
   }
 }
 

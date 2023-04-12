@@ -30,13 +30,36 @@ let arrows = document.querySelectorAll('.menu__arrow');
 
 if (isMobile.any()) {
     document.body.classList.add('_touch');
-    if (arrows.length > 0) {
-        arrows.forEach(arrow => {
-            arrow.addEventListener('click', function (e) {
-                arrow.parentElement.classList.toggle('_active');
-            })
+
+    let triggerSubmenu = document.querySelector('.menu__item--mobile');
+
+    triggerSubmenu.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log('click');
+        document.querySelector('.submenu-mobile').classList.add('active');
+        document.querySelector('.header__menu').classList.add('left');
+    })
+
+    let buttonBack = document.querySelectorAll('.back-menu');
+    // Кнопка назад
+    buttonBack.forEach(button => {
+        button.addEventListener('click', function (e) {
+            e.preventDefault();
+            let parentSubmenu = e.target.parentElement;
+            parentSubmenu.classList.remove('active');
+            document.querySelector('.header__menu').classList.remove('left');
+            document.querySelector('.submenu-mobile').classList.remove('left');
         })
-    }
+    })
+
+    let buttonSubmenuTwo = document.querySelector('.arrow-submenu');
+    // открытие последнего меню
+    buttonSubmenuTwo.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector('.sub-submenu-mobile').classList.add('active');
+        document.querySelector('.submenu-mobile').classList.add('left');
+        console.log('click-2');
+    })
 
 } else {
     document.body.classList.add('_pc');

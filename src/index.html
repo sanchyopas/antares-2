@@ -71,13 +71,22 @@
                         <br>ремонта
                     </h2>
                     <form action="#" class="form">
+                        <input type="hidden" class="form__input--hidden" name="pagetitle" value="[[*pagetitle]]">
+                        <input type="hidden" class="form__input--hidden" name="urladress"
+                            value="[[~[[*id]]? &scheme=`full`]]">
                         <div class="form__input wow animate__animated animate__fadeInLeft">
-                            <label for="phone">Ваш телефон</label>
-                            <input type="tel" id="phone" placeholder="+ 7 999 999 99 99 ">
+                            <span class="error_phone">Обязательное поле*</span>
+                            <div class="form__input--wrap">
+                                <label for="phone">Ваш телефон</label>
+                                <input type="tel" id="phone" placeholder="+ 7 999 999 99 99 " data-tel-input>
+                            </div>
                         </div>
-                        <div class="form__input wow animate__animated animate__fadeInUp">
-                            <label for="message">Опишите вашу проблему</label>
-                            <textarea id="message"></textarea>
+                        <div class="form__input form__input--big wow animate__animated animate__fadeInUp">
+                            <span class="error_message">Обязательное поле*</span>
+                            <div class="form__input--wrap">
+                                <label for="message">Опишите вашу проблему</label>
+                                <textarea id="message"></textarea>
+                            </div>
                         </div>
                         <button type="submit" class="wow animate__animated animate__fadeInRight">Отправить
                             заявку</button>
@@ -414,8 +423,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
         integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
     <script>new WOW().init();</script>
     <script src="js/app.min.js"></script>
+
 </body>
 
 </html>

@@ -31,7 +31,7 @@ const swiper = new Swiper('.reviews__slider', {
         }
     }
 });
-const gallery__lider = new Swiper('.gallery__slider', {
+const gallery__slider = new Swiper('.gallery__slider', {
     slidesPerView: 3,
     spaceBetween: 30,
     allowSlideNext: true,
@@ -40,25 +40,23 @@ const gallery__lider = new Swiper('.gallery__slider', {
     observer: true,
 
     freeMode: false,
+    allowTouchMove: true,
+
     breakpoints: {
         0: {
             slidesPerView: 1,
         },
-        425: {
+        426: {
             slidesPerView: 2,
         },
         767: {
             spaceBetween: 10,
-            allowTouchMove: true,
             slidesPerView: 2
         },
         1024: {
-            allowTouchMove: true,
             slidesPerView: 3,
         },
         1260: {
-            spaceBetween: 15,
-            slidesPerColumn: 2,
             loop: false,
         }
     }
@@ -81,17 +79,23 @@ if (swiperNext) {
 }
 
 
-const galleryPrev = document.getElementById('gallery__btn--prev');
-const galleryNext = document.getElementById('gallery__btn--next');
+const galleryPrev = document.querySelectorAll('#gallery__btn--prev');
+const galleryNext = document.querySelectorAll('#gallery__btn--next');
 
-if (galleryPrev) {
-    galleryPrev.addEventListener('click', () => {
-        gallery__lider.slidePrev();
+if (galleryPrev.length > 0) {
+    galleryPrev.forEach(arrow => {
+        arrow.addEventListener('click', () => {
+            gallery__slider.slidePrev();
+        })
     })
 }
 
-if (galleryNext) {
-    galleryNext.addEventListener('click', () => {
-        gallery__lider.slideNext();
+if (galleryNext.length > 0) {
+    galleryNext.forEach(arrow => {
+        arrow.addEventListener('click', () => {
+            console.log('2');
+            gallery__slider.slideNext();
+        })
     })
+
 }

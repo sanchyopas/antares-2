@@ -3,11 +3,11 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
 
 // init Swiper:
-const swiper = new Swiper('.reviews__slider', {
+const reviews__slider = new Swiper('.reviews__slider', {
     slidesPerView: 2.5,
     spaceBetween: 8,
-    allowSlideNext: true,
-    allowSlidePrev: true,
+    // allowSlideNext: true,
+    // allowSlidePrev: true,
     autoHeight: true,
     observer: true,
     breakpoints: {
@@ -63,19 +63,24 @@ const gallery__slider = new Swiper('.gallery__slider', {
 
 });
 
-const swiperPrev = document.getElementById('reviews__prev');
-const swiperNext = document.getElementById('reviews__next');
+const swiperPrev = document.querySelectorAll('.reviews__prev');
+const swiperNext = document.querySelectorAll('.reviews__next');
 
-if (swiperPrev) {
-    swiperPrev.addEventListener('click', () => {
-        swiper.slidePrev();
-    });
+if (swiperPrev.length > 0) {
+    swiperPrev.forEach(btn => {
+        btn.addEventListener('click', () => {
+            reviews__slider.slidePrev();
+            console.log('clikc-prev');
+        });
+    })
 }
 
-if (swiperNext) {
-    swiperNext.addEventListener('click', () => {
-        swiper.slideNext();
-    });
+if (swiperNext.length > 0) {
+    swiperNext.forEach(btn => {
+        btn.addEventListener('click', () => {
+            reviews__slider.slideNext();
+        });
+    })
 }
 
 

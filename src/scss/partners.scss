@@ -17,6 +17,7 @@
     &__body {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
         justify-items: space-between;
         padding-bottom: 50px;
 
@@ -55,5 +56,9 @@
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
+
+        @media screen and (max-width: 769px) {
+            display: none;
+        }
     }
 }

@@ -97,7 +97,7 @@ button {
 .btn {}
 
 ._title {
-    font-family: $Unb;
+    font-family: $Montserrat;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -194,4 +194,8 @@ body::before {
     font-size: 11px;
     color: red;
     margin-bottom: 5px;
+}
+
+.swiper-button-disabled {
+    opacity: 0;
 }

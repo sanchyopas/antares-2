@@ -86,7 +86,7 @@ if (close) {
 
 // Плавная прокрутка к элементу
 
-const anchorLink = document.querySelectorAll('.menu-link[data-goto]');
+const anchorLink = document.querySelectorAll('[data-goto]');
 
 if (anchorLink.length > 0) {
     anchorLink.forEach(link => {

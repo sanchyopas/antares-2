@@ -148,6 +148,7 @@
     // .grid__image
 
     &__image {
+        border-top: 3px solid $blue;
 
         @media screen and (min-width: 769px) {
             flex: 0 0 50%;
@@ -172,6 +173,8 @@
 
     // .grid__image--left
     &__image--left {
+        border-bottom: 3px solid $blue;
+
         @media screen and (min-width: 768px) {
             flex: 0 0 100%;
             position: relative;

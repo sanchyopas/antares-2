@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+@@include('html/head.html', {
+"title":"Автопрофи"
+})
+
+<body>
+    @@include('html/_header.html')
+    <main>
+        <div class="contact">
+            <div class="container">
+                <div class="contact__body">
+                    <h2 class="contact__title _title wow animate__animated animate__fadeInLeft">
+                        Наши контакты
+                    </h2>
+                    <div class="contact__row">
+                        <div class="contact__info info-contact">
+                            <a href="tel:+73822700351"
+                                class="info-contact__item wow animate__animated animate__fadeInLeft">
+                                <div class="info-contact__icon">
+                                    <img src="@img/icons/phone.svg" alt="">
+                                </div>
+                                <p class="info-contact__text">(3822) 700-351</p>
+                            </a>
+                            <a href="tel:+73822700351"
+                                class="info-contact__item wow animate__animated animate__fadeInLeft">
+                                <div class="info-contact__icon">
+                                    <img src="@img/icons/contact-telegram.svg" alt="">
+                                </div>
+
+                                <p class="info-contact__text wow animate__animated animate__fadeInLeft">
+                                    <span class="info-contact__untitle">отдел автозапчастей</span>
+                                    +7 (3822) 700-351
+                                </p>
+                            </a>
+                            <a href="tel:+79009213172"
+                                class="info-contact__item wow animate__animated animate__fadeInLeft">
+                                <div class="info-contact__icon">
+                                    <img src="@img/icons/contact-whatsapp.svg" alt="">
+                                </div>
+
+                                <p class="info-contact__text">
+                                    +7 (900) 921-31-72
+                                </p>
+                            </a>
+                            <a href="tel:+79009213172"
+                                class="info-contact__item wow animate__animated animate__fadeInLeft">
+                                <div class="info-contact__icon">
+                                    <img src="@img/icons/message.svg" alt="">
+                                </div>
+
+                                <p class="info-contact__text">
+                                    <span class="info-contact__untitle">ваши вопросы и предложения </span>
+                                    autoprofi70@yandex.ru
+                                </p>
+                            </a>
+                            <a href="tel:+79009213172"
+                                class="info-contact__item wow animate__animated animate__fadeInLeft">
+                                <div class="info-contact__icon">
+                                    <img src="@img/icons/address.svg" alt="">
+                                </div>
+
+                                <p class="info-contact__text">
+                                    Томск, пр. Фрунзе, 240а, стр. 3
+                                </p>
+                            </a>
+                        </div>
+                        <div class="contact__map wow animate__animated animate__fadeInRight">
+                            <iframe
+                                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac2c2b6efa826097c3d8035e6e32fee0e958fca7165e11c2e7a05ceb92b8b6674&amp;source=constructor"
+                                width="100%" height="375" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('html/_footer.html')
+    @@include('html/popup.html')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>new WOW().init();</script>
+    <script src="js/app.min.js"></script>
+
+</body>
+
+</html>

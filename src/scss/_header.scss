@@ -1,4 +1,10 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #fff;
 
   // .header__top
 
@@ -460,4 +466,26 @@ body._pc .bottom__item:hover .submenu {
   @media screen and (min-width: 769px) {
     display: none;
   }
+}
+
+.breadcums{
+  // .breadcums__col
+  &__col{}
+
+  // .breadcums__text
+  &__text{}
+
+  // .breadcums__list
+  &__list{
+    
+  }
+  // .breadcums__item
+  &__item{
+
+  }
+
+  // .breadcums__list
+  &__active{}
+
+
 }

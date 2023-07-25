@@ -235,6 +235,31 @@
     }
 }
 
+.rich-text{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: -0.01em;
+    color: $black;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+        // max-width: 734px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        padding: 0px 0px 60px;
+    }
+
+    a{
+      color: $blue;
+    }
+  }
+}
 .find-coast {
     padding: $padding_section 0px;
 
@@ -1224,3 +1249,50 @@
         color: #27577C;
     }
 }
+
+.text {
+
+  &__inner {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title{
+    color: $blue;
+  }
+
+  &__parag {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -.01em;
+    color: #131313;
+    margin-top: 22px;
+
+    a{
+      color: $blue;
+    }
+  }
+
+  &__btn{
+    width: 247px;
+    height: 64px;
+    background: #27577C;
+    border-radius: 5px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    font-size: 13.7617px;
+    line-height: 125%;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+    margin-top: 30px;
+    align-self: flex-end;
+    transition: $animation_speed;
+
+    &:hover{
+      background: #366b94;
+    }
+  }
+}
+

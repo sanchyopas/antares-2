@@ -171,6 +171,15 @@ body::before {
     }
 }
 
+main{
+  padding-top: 100px;
+}
+
+.hidden_fields{
+  display: none !important;
+  pointer-events: none;
+}
+
 ._lock {
 
     body {
@@ -198,4 +207,28 @@ body::before {
 
 .swiper-button-disabled {
     opacity: 0;
+}
+
+.breadcrumbs {
+padding: 10px 0px;
+  &__col {
+  }
+
+  &__list {
+    display: flex;
+
+    a{
+      margin-right: 10px;
+    }
+  }
+
+  &__item {
+    font-weight: 600;
+    color: #27577c;
+  }
+
+  &__active {
+    margin-left: 10px;
+    font-weight: 600;
+  }
 }

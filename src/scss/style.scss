@@ -11,10 +11,8 @@
   --animate-duration: 1s;
 }
 
-
 // Переменны (цвета, скорость transition и пр)
 @import "_variables";
-
 @import "common";
 @import "_header";
 @import "_footer";
@@ -26,7 +24,8 @@
 @import "license";
 @import "partners";
 @import "article";
-
+@import "animate";
+@import "fancy";
 
 * {
   outline: none;
@@ -54,7 +53,6 @@ body {
     max-width: 100vw;
   }
 
-
   main {
     flex: 1 0 auto;
   }
@@ -63,7 +61,7 @@ body {
 // import styles bundle
 @import "./slider";
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width: 768px) {
   .animated {
     /*CSS transitions*/
     -o-transition-property: none !important;
